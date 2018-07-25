@@ -1,4 +1,4 @@
-#include "singleton.h"
+#include "../core/singleton.h"
 
 singleton_t::singleton_t() {}
 

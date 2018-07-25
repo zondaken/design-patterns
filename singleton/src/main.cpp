@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "singleton.h"
+#include "../core/singleton.h"
 
 int main() {
     singleton_t& st = singleton_t::instance();
