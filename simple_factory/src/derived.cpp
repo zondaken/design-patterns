@@ -1,4 +1,4 @@
-#include "derived.h"
+#include "../core/derived.h"
 
 foo::foo() {
     base::set_name("Foo");

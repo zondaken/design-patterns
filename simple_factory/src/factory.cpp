@@ -1,7 +1,6 @@
-#include "factory.h"
+#include "../core/factory.h"
 
-#include "foo.h"
-#include "bar.h"
+#include "../core/derived.h"
 
 base factory_t::create(factory_product_e c) {
     if(c == factory_product_e::FOO) {

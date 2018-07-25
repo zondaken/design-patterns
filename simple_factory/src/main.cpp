@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "factory.h"
+#include "../core/factory.h"
 
 void say_hello(base& rhs) {
     std::cout << rhs.get_name() << std::endl;
