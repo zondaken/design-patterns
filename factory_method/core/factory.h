@@ -7,9 +7,7 @@ class factory {
     protected:
         virtual product* factory_method(int i) = 0;
     public:
-        virtual product* create(int i) {
-            return factory_method(i);
-        }
+        virtual product* create(int i);
 };
 
 #endif
