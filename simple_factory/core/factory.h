@@ -6,8 +6,10 @@
 enum factory_product_e { FOO, BAR };
 
 class factory_t {
+    protected:
+        base factory_method(factory_product_e c);
     public:
-        static base create(factory_product_e c);
+        base create(factory_product_e c);
 };
 
 #endif

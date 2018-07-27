@@ -2,7 +2,7 @@
 
 #include "../core/derived.h"
 
-base factory_t::create(factory_product_e c) {
+base factory_t::factory_method(factory_product_e c) {
     if(c == factory_product_e::FOO) {
         foo result;
         return result;
@@ -12,4 +12,8 @@ base factory_t::create(factory_product_e c) {
     } else {
         throw "Invalid input";
     }
+}
+
+base factory_t::create(factory_product_e c) {
+    return factory_method();
 }
