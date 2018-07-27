@@ -4,8 +4,12 @@
 #include "product.h"
 
 class factory {
+    protected:
+        virtual product* factory_method(int i) = 0;
     public:
-        virtual product* create() { throw "Abstract method (factory::create(): product)"; }
+        virtual product* create(int i) {
+            return factory_method(i);
+        }
 };
 
 #endif

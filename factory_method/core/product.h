@@ -3,7 +3,7 @@
 
 class product {
     public:
-        virtual void do_sth() { throw "Abstract method (product::do_sth(): void)"; }
+        virtual void do_sth() = 0;
 };
 
 #endif
