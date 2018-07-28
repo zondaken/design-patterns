@@ -7,14 +7,8 @@ class observable1 : public observable {
     private:
         int _x;
     public:
-        virtual state get_state() override {
-            return { _x };
-        }
-
-        void change(int x) {
-            _x = x;
-            notify_all();
-        }
+        virtual state get_state() override;
+        void change(int x);
 };
 
 #endif

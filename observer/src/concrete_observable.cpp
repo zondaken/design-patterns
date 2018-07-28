@@ -1,6 +1,6 @@
 #include "../core/concrete_observable.h"
 
-state observable1::get_state() override {
+state observable1::get_state() {
     return { _x };
 }
 

@@ -12,27 +12,15 @@ class observable {
     friend class observer;
 
     private:
-        virtual void notify_observer(observer* o) final {
-            o->update();
-        }
-
         virtual state get_state() = 0;
+        virtual void notify_observer(observer* o) final;
     protected:
         std::forward_list<observer*> _observers;
 
-        virtual void notify_all() final {
-            for(observer* o : _observers) {
-                notify_observer(o);
-            }
-        }
+        virtual void notify_all() final;
     public:
-        virtual void register_observer(observer* o) final {
-            _observers.push_front(o);
-        }
-
-        virtual void unregister_observer(observer* o) final {
-            _observers.remove(o);
-        }
+        virtual void register_observer(observer* o);
+        virtual void unregister_observer(observer* o);
 };
 
 #endif
