@@ -4,17 +4,17 @@
 #include "factory.h"
 #include "concrete_product.h"
 
-class concrete_factory_a : public factory {
+class factory1 : public factory {
     protected:
         virtual product* factory_method(int a) override;
 };
 
-class concrete_factory_b : public factory {
+class factory2 : public factory {
     protected:
         virtual product* factory_method(int a) override;
 };
 
-class concrete_factory_c : public factory {
+class factory3 : public factory {
     protected:
         virtual product* factory_method(int a) override;
 };

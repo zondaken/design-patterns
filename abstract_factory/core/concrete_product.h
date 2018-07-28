@@ -4,17 +4,17 @@
  * product_a
  */
 
-class concrete_product_a_a : public product_a {
+class product11 : public product_a {
     public:
         virtual void do_sth_a() override;
 };
 
-class concrete_product_a_b : public product_a {
+class product12 : public product_a {
     public:
         virtual void do_sth_a() override;
 };
 
-class concrete_product_a_c : public product_a {
+class product13 : public product_a {
     public:
         virtual void do_sth_a() override;
 };
@@ -23,17 +23,17 @@ class concrete_product_a_c : public product_a {
  * product_b
  */
 
-class concrete_product_b_a : public product_b {
+class product21 : public product_b {
     public:
         virtual void do_sth_b() override;
 };
 
-class concrete_product_b_b : public product_b {
+class product22 : public product_b {
     public:
         virtual void do_sth_b() override;
 };
 
-class concrete_product_b_c : public product_b {
+class product23 : public product_b {
     public:
         virtual void do_sth_b() override;
 };
@@ -42,17 +42,17 @@ class concrete_product_b_c : public product_b {
  * product_c
  */
 
-class concrete_product_c_a : public product_c {
+class product31 : public product_c {
     public:
         virtual void do_sth_c() override;
 };
 
-class concrete_product_c_b : public product_c {
+class product32 : public product_c {
     public:
         virtual void do_sth_c() override;
 };
 
-class concrete_product_c_c : public product_c {
+class product33 : public product_c {
     public:
         virtual void do_sth_c() override;
 };

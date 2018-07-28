@@ -3,7 +3,7 @@
 
 #include "observable.h"
 
-class concrete_observable : public observable {
+class observable1 : public observable {
     private:
         int _x;
     public:

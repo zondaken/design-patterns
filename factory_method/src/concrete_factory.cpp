@@ -1,6 +1,6 @@
 #include "../core/concrete_factory.h"
 
-product* concrete_factory_a::factory_method(int a) {
+product* factory1::factory_method(int a) {
     if(a == 0) {
         return new concrete_product_a();
     } else if(a == 1) {
@@ -10,7 +10,7 @@ product* concrete_factory_a::factory_method(int a) {
     }
 }
 
-product* concrete_factory_b::factory_method(int a) {
+product* factory2::factory_method(int a) {
     if(a == 1) {
         return new concrete_product_a();
     } else if(a == 2) {
@@ -20,7 +20,7 @@ product* concrete_factory_b::factory_method(int a) {
     }
 }
 
-product* concrete_factory_c::factory_method(int a) {
+product* factory3::factory_method(int a) {
     if(a == 2) {
         return new concrete_product_a();
     } else if(a == 1) {

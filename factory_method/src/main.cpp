@@ -3,7 +3,7 @@
 #include "../core/concrete_factory.h"
 
 int main() {
-    factory* f = new concrete_factory_a();
+    factory* f = new factory1();
     product* p;
 
     for(int32_t i = 0; i < 3; i += 1) {

@@ -6,15 +6,15 @@
  * product_a
  */
 
-void concrete_product_a_a::do_sth_a() {
+void product11::do_sth_a() {
     std::cout << "I'm the first subclass of family A.";
 }
 
-void concrete_product_a_b::do_sth_a() {
+void product12::do_sth_a() {
     std::cout << "I'm the second subclass of family A.";
 }
 
-void concrete_product_a_c::do_sth_a() {
+void product13::do_sth_a() {
     std::cout << "I'm the third subclass of family A.";
 }
 
@@ -22,15 +22,15 @@ void concrete_product_a_c::do_sth_a() {
  * product_b
  */
 
-void concrete_product_b_a::do_sth_b() {
+void product21::do_sth_b() {
     std::cout << "I'm the first subclass of family B.";
 }
 
-void concrete_product_b_b::do_sth_b() {
+void product22::do_sth_b() {
     std::cout << "I'm the second subclass of family B.";
 }
 
-void concrete_product_b_c::do_sth_b() {
+void product23::do_sth_b() {
     std::cout << "I'm the third subclass of family B.";
 }
 
@@ -38,14 +38,14 @@ void concrete_product_b_c::do_sth_b() {
  * product_c
  */
 
-void concrete_product_c_a::do_sth_c() {
+void product31::do_sth_c() {
     std::cout << "I'm the first subclass of family C.";
 }
 
-void concrete_product_c_b::do_sth_c() {
+void product32::do_sth_c() {
     std::cout << "I'm the second subclass of family C.";
 }
 
-void concrete_product_c_c::do_sth_c() {
+void product33::do_sth_c() {
     std::cout << "I'm the third subclass of family C.";
 }

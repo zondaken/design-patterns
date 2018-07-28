@@ -8,11 +8,11 @@
 
 // this observer asserts that the updated value remains positive
 
-class concrete_observer_a : public observer {
+class observer1 : public observer {
     private:
-        concrete_observable* _obj;
+        observable1* _obj;
     public:
-        concrete_observer_a(concrete_observable* obj) : _obj(obj) {}
+        observer1(observable1* obj) : _obj(obj) {}
 
         virtual void update() override {
             state s = _obj->get_state();
@@ -25,11 +25,11 @@ class concrete_observer_a : public observer {
 
 // this observer asserts that the updated value remains above 5
 
-class concrete_observer_b : public observer {
+class observer2 : public observer {
     private:
-        concrete_observable* _obj;
+        observable1* _obj;
     public:
-        concrete_observer_b(concrete_observable* obj) : _obj(obj) {}
+        observer2(observable1* obj) : _obj(obj) {}
 
         virtual void update() override {
             state s = _obj->get_state();
@@ -42,11 +42,11 @@ class concrete_observer_b : public observer {
 
 // this observer asserts that the updated value remains above 15
 
-class concrete_observer_c : public observer {
+class observer3 : public observer {
     private:
-        concrete_observable* _obj;
+        observable1* _obj;
     public:
-        concrete_observer_c(concrete_observable* obj) : _obj(obj) {}
+        observer3(observable1* obj) : _obj(obj) {}
 
         virtual void update() override {
             state s = _obj->get_state();

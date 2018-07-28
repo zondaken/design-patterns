@@ -16,11 +16,11 @@ void safe_delete(T*& ptr, Args... rest) {
 }
 
 int main() {
-    concrete_observable* obj1 = new concrete_observable();
+    observable1* obj1 = new observable1();
 
-    observer* obs1 = new concrete_observer_a(obj1);
-    observer* obs2 = new concrete_observer_b(obj1);
-    observer* obs3 = new concrete_observer_c(obj1);
+    observer* obs1 = new observer1(obj1);
+    observer* obs2 = new observer2(obj1);
+    observer* obs3 = new observer3(obj1);
 
     obj1->register_observer(obs1);
     obj1->register_observer(obs2);

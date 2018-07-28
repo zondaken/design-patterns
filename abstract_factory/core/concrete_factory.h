@@ -3,25 +3,25 @@
 
 #include "factory.h"
 
-class concrete_factory_a : public factory {
+class factory1 : public factory {
     protected:
-        virtual product_a* factory_method_a(int i) override;
-        virtual product_b* factory_method_b(int i) override;
-        virtual product_c* factory_method_c(int i) override;
+        virtual product_a* factory_method1(int i) override;
+        virtual product_b* factory_method2(int i) override;
+        virtual product_c* factory_method3(int i) override;
 };
 
-class concrete_factory_b : public factory {
+class factory2 : public factory {
     protected:
-        virtual product_a* factory_method_a(int i) override;
-        virtual product_b* factory_method_b(int i) override;
-        virtual product_c* factory_method_c(int i) override;
+        virtual product_a* factory_method1(int i) override;
+        virtual product_b* factory_method2(int i) override;
+        virtual product_c* factory_method3(int i) override;
 };
 
-class concrete_factory_c : public factory {
+class factory3 : public factory {
     protected:
-        virtual product_a* factory_method_a(int i) override;
-        virtual product_b* factory_method_b(int i) override;
-        virtual product_c* factory_method_c(int i) override;
+        virtual product_a* factory_method1(int i) override;
+        virtual product_b* factory_method2(int i) override;
+        virtual product_c* factory_method3(int i) override;
 };
 
 #endif
